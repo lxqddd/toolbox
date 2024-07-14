@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.22.0",
+    "@iconify-json/mdi": "^1.1.67",
     "@unocss/nuxt": "^0.61.3",
     "eslint": "^9.6.0",
     "naive-ui": "^2.38.2",
