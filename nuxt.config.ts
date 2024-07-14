@@ -28,5 +28,10 @@ export default defineNuxtConfig({
         resolvers: [NaiveUiResolver()]
       })
     ]
+  },
+  routeRules: {
+    '/': {
+      redirect: '/JsonFormatter'
+    }
   }
 })
