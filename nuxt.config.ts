@@ -5,7 +5,14 @@ import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  modules: ['@unocss/nuxt', "nuxtjs-naive-ui"],
+  modules: ['@unocss/nuxt', "nuxtjs-naive-ui", 'nuxt-monaco-editor'],
+  monacoEditor: {
+    locale: 'en',
+    componentName: {
+      codeEditor: 'MonacoEditor',
+      diffEditor: 'MonacoDiffEditor'
+    }
+  },
   app: {
     layoutTransition: { name: 'layout', mode: 'out-in' }
   },
@@ -33,5 +40,6 @@ export default defineNuxtConfig({
     '/': {
       redirect: '/JsonFormatter'
     }
-  }
+  },
+
 })
