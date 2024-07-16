@@ -1,0 +1,19 @@
+{
+  "Vue 3 Single File Component": {
+    "scope": "vue",
+    "prefix": "vue3",
+    "body": [
+      "<template>",
+      "  <div>$1</div>",
+      "</template>",
+      "<script lang=\"ts\" setup>",
+      "",
+      "</script>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "",
+      "</style>"
+    ],
+    "description": "Vue 3 Single File Component"
+  }
+}
