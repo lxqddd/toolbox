@@ -33,8 +33,8 @@ const prevPrettierJson = ref('')
 const prettiedJson = ref('')
 
 
-watch(prevPrettierJson, async (newVal, oldVal) => {
-  prettiedJson.value = await formatJson(newVal)
+watch(prevPrettierJson, async (val) => {
+  prettiedJson.value = await formatJson(val)
 })
 
 
