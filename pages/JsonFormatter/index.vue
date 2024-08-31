@@ -1,5 +1,5 @@
 <template>
-  <div class="flex h-100%">
+  <div class="flex h-100% w-100%">
     <div class="mr-4 flex-1">
        <MonacoEditor class="h-100%" v-model="prevPrettierJson" lang="json" :options="MonacoEditOptions"/>
     </div>
