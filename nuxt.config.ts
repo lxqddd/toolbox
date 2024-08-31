@@ -3,7 +3,6 @@ import Components from 'unplugin-vue-components/vite'
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 
 export default defineNuxtConfig({
-  ssr: true,
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   modules: ['@unocss/nuxt', "nuxtjs-naive-ui", 'nuxt-monaco-editor'],
@@ -16,7 +15,11 @@ export default defineNuxtConfig({
   },
   app: {
     baseURL: process.env.NODE_ENV === 'production' ? 'toolbox' : '/',
-    layoutTransition: { name: 'layout', mode: 'out-in' }
+    layoutTransition: { name: 'layout', mode: 'out-in' },
+    buildAssetsDir: 'nuxt_assets'
+  },
+  experimental: {
+    payloadExtraction: false,
   },
   css: ['normalize.css', '~/assets/styles/variable.scss'],
   vite: {
