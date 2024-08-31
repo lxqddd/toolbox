@@ -3,7 +3,7 @@ import Components from 'unplugin-vue-components/vite'
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 
 export default defineNuxtConfig({
-  target: 'static',
+  ssr: true,
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   modules: ['@unocss/nuxt', "nuxtjs-naive-ui", 'nuxt-monaco-editor'],
